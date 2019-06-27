@@ -2,3 +2,4 @@ env/
 *.pyc
 __pycache__
 *secret*
+recipe_react/node_modules
