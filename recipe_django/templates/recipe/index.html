@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Ingredient</title>
+  </head>
+  <body>
+    <h1>Ingredient List</h1>
+    <div class="list">
+      {% if items %}
+      <table>
+        <thead>
+          <th>Name</th>
+        </thead>
+        {% for i in items %}
+        <tr>
+          <td>{{ i.name }}</td>
+        </tr>
+        {% endfor %}
+      </table>
+      {% else %}
+      <p>NO LIST FOUND</p>
+      {% endif %}
+    </div>
+  </body>
+</html>
