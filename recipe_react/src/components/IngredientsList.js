@@ -1,7 +1,8 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import { fetchIngredients } from '../actions'
-import IngredientItem from './IngredientItem.js'
+import { fetchIngredients } from '../actions';
+import IngredientItem from './IngredientItem.js';
+
 
 class IngredientsList extends React.Component {
     componentDidMount() {
@@ -11,16 +12,16 @@ class IngredientsList extends React.Component {
     renderList() {
       return this.props.ingredients.map(ingredient => {
         return (
-          <div className="ingredient" key={ingredient.id}>
-            <IngredientItem  name={ingredient.name} />
-          </div>
+            <div className="ingredient" key={ingredient.id}>
+              <IngredientItem  name={ingredient.name} id={ingredient.id}/>
+            </div>
         )
       })
     }
 
     render() {
         return (
-        <div className="ui container">
+        <div className="ui container1">
           <h2>Ingredients</h2>
           <h4>Please select from below:</h4>
           {this.renderList()}
