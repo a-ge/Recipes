@@ -12,7 +12,7 @@ class SelectedItems extends React.Component {
             </div>
         )
       })
-    }
+    };
 
     render() {
       console.log(this.props.selection)
@@ -23,7 +23,7 @@ class SelectedItems extends React.Component {
           {this.renderList()}
         </div>
       )
-    }
+    };
 };
 
 const mapStateToProps = state => {

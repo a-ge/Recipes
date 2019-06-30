@@ -3,11 +3,10 @@ import { connect } from 'react-redux';
 import { fetchIngredients } from '../actions';
 import IngredientItem from './IngredientItem.js';
 
-
 class IngredientsList extends React.Component {
     componentDidMount() {
         this.props.fetchIngredients();
-    }
+    };
 
     renderList() {
       return this.props.ingredients.map(ingredient => {
@@ -17,7 +16,7 @@ class IngredientsList extends React.Component {
             </div>
         )
       })
-    }
+    };
 
     render() {
         return (
@@ -27,14 +26,11 @@ class IngredientsList extends React.Component {
           {this.renderList()}
         </div>
       )
-    }
-}
+    };
+};
 
 const mapStateToProps = state => {
     return { ingredients: state.ingredients };
 };
 
-export default connect(
-    mapStateToProps,
-    { fetchIngredients }
-)(IngredientsList);
+export default connect(mapStateToProps, { fetchIngredients })(IngredientsList);

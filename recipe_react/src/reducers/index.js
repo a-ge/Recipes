@@ -6,5 +6,4 @@ import selectionReducer from './selectionReducer';
 export default combineReducers({
     ingredients: ingredientsReducer,
     selection: selectionReducer
-
 });

@@ -9,7 +9,7 @@ class IngredientItem extends React.Component {
       this.state = {
         isChecked: false,
       };
-    }
+    };
 
     toggleChange = () => {
       this.setState ({
@@ -23,7 +23,7 @@ class IngredientItem extends React.Component {
       } else {
         this.props.addItem(id, name)
       }
-    }
+    };
 
     render() {
       const { name } = this.props;
@@ -32,14 +32,14 @@ class IngredientItem extends React.Component {
               <input type="checkbox" className="itemButton" defaultChecked={this.state.isChecked} onChange={this.toggleChange} />{name}
           </div>
       )
-    }
-}
+    };
+};
 
 const mapDispatchToProps = dispatch => {
   return {
     addItem: (id, name) => { dispatch(addItem(id, name)) },
     removeItem: (id, name) => { dispatch(removeItem(id, name)) }
   }
-}
+};
 
 export default connect(null, mapDispatchToProps)(IngredientItem);
