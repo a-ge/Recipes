@@ -10,6 +10,10 @@
 ## Overview
 Basic app using Django and React to display a list of selected ingredients.
 
+<h1 align="center">
+    <img src="app.gif">
+</h1>
+
 <a name="requirements"/></a>
 ## Requirements
 ```
