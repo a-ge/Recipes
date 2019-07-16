@@ -16,8 +16,9 @@ Basic app using Django and React to display a list of selected ingredients.
 
 <a name="requirements"/></a>
 ## Requirements
+Node v10.16.0
 ```
-$ pip install Djano django-cors-headers djangorestframework
+$ pip install Django django-cors-headers djangorestframework
 ```
 ```
 $ npm install  --save react react-dom react-redux redux-thunk axios
